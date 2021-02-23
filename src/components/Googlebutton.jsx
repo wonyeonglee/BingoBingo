@@ -15,7 +15,18 @@ class Googlebutton extends Component {
         }
     }
     // Google Login
-    responseGoogle = (res) => {
+    responseGoogle = async (googleData) => {
+        const res = await fetch("http://localhost:3002/api/v1/auth/google", {
+            method: "POST",
+            body: JSON.stringify({
+                token: googleData.tokenId
+            }),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        const data = await res.json()
+        // store returned user somehow
         console.log(res)
     }
 
@@ -31,7 +42,8 @@ class Googlebutton extends Component {
                     clientId={clientId}
                     buttonText="구글로 로그인하기"
                     onSuccess={this.responseGoogle}
-                    onFailure={this.responseFail}
+                    onFailure={this.responseGoogle}
+                    cookiePolicy={'single_host_origin'}
                 />
             </Container>
         );

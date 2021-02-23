@@ -6,10 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import Lobby from './Lobby'
 import MakeRoom from './MakeRoom'
 import GameRoom from './GameRoom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <GameRoom />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route exact path="/lobby" component={Lobby} />
+        <Route exact path="/makeroom" component={MakeRoom} />
+        <Route exact path="/gameroom" component={GameRoom} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
