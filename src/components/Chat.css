@@ -1,0 +1,29 @@
+.chatbody {
+  width: 100%;
+  height: 300px;
+  border: black solid 1px;
+}
+
+.chatview {
+  width: 100%;
+  height: 80%;
+}
+
+.chatform {
+  width: 100%;
+  height: 20%;
+}
+
+#msg {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.send {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  box-sizing: border-box;
+}

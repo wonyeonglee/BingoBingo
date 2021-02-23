@@ -1,0 +1,16 @@
+.userimg {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.userinfo {
+  margin-left: 10px;
+}
+
+.usersroot {
+  width: 150px;
+  display: inline-block;
+  margin-left: 20px;
+}

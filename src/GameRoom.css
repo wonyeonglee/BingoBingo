@@ -1,0 +1,25 @@
+.usersbody {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+.bingobody {
+  width: 50%;
+  height: 100%;
+  float: right;
+  text-align: center;
+}
+.bodyroot {
+  width: 100%;
+  height: 650px;
+}
+
+.usersinfo {
+  width: 100%;
+  height: 330px;
+}
+
+.makebutton {
+  margin-top: 30px;
+}
